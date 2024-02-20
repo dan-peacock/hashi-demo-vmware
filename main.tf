@@ -4,6 +4,18 @@ provider "vsphere" {
   vsphere_server       = var.ip
   allow_unverified_ssl = true
 }
+}
+
+module "module_a" {
+  source = "./module_a"
+  count  = var.cloud == "no" ? 1 : 0
+}
+
+module "module_b" {
+  source = "./module_b"
+  count  = var.cloud == "yes" ? 1 : 0
+}
+
 
 data "vsphere_datacenter" "datacenter" {
   name = "dc1"
