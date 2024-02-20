@@ -17,5 +17,3 @@ variable ip {
   description = "IP or FQDN of vSphere server"
   type        = string
 }
-
-variable VMname {}
