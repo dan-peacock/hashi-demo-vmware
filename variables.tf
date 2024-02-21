@@ -23,12 +23,12 @@ variable ip {
 variable VMname {}
 
 
-variable "subscription_ID" {
+variable subscription_ID {
     description = "SP AppID"
     type = string
 }
 
-variable "tenant_ID" {
+variable tenant_ID {
     description = "SP AppID"
     type = string
 }
