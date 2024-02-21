@@ -62,8 +62,4 @@ resource "azurerm_virtual_machine" "main" {
   os_profile_linux_config {
     disable_password_authentication = false
   }
-  tags = {
-      environment = var.tags
-      
-  }
 }
