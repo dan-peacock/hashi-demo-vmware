@@ -18,13 +18,3 @@ variable "tags" {
   description = "Additional resource tags"
   type        = string
 }
-
-variable "subscription_ID" {
-    description = "SP AppID"
-    type = string
-}
-
-variable "tenant_ID" {
-    description = "SP AppID"
-    type = string
-}
