@@ -13,8 +13,3 @@ variable "default_password" {
     type = string
     default = "Password1234!"
 }
-
-variable "tags" {
-  description = "Additional resource tags"
-  type        = string
-}
