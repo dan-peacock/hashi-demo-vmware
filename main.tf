@@ -1,6 +1,7 @@
 module "vmware" {
   source = "./vmware"
   count  = var.cloud == "No" ? 1 : 0
+  VMname  = var.VMname
 }
 
 module "azure" {
