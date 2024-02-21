@@ -1,34 +1,34 @@
-variable cloud {
+variable "cloud" {
   description = "If Yes will deploy to Azure, if No will deploy to VMWare"
   type        = string
   default     = "No"
 }
 
-variable username {
+variable "username" {
   description = "vSphere administrator username"
   type        = string
   default     = "administrator@vsphere.local"
 }
 
-variable password {
+variable "password" {
   description = "vSphere administrator password"
   type        = string
 }
 
-variable ip {
+variable "ip" {
   description = "IP or FQDN of vSphere server"
   type        = string
 }
 
-variable VMname {}
+variable "VMname" {}
 
 
-variable subscription_ID {
+variable "subscription_ID" {
     description = "SP AppID"
     type = string
 }
 
-variable tenant_ID {
+variable "tenant_ID" {
     description = "SP AppID"
     type = string
 }
